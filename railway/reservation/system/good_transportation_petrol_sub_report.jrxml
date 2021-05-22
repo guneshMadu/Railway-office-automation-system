@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fb63f1e8-7d59-4402-9c63-407f95eb4661">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="29"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     *
+FROM
+     petrol]]>
+	</queryString>
+	<field name="NIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="source" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="destination" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wagon" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="permit_no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="good" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="purpose" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sender_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sender_addr" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="res_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="res_addr" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="start_time" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="end_time" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ton" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="km" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fare" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="authorize" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="4_wheel" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="8_wheel_1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="8_wheel_2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="8_wheel_3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="134" y="16" width="412" height="53" uuid="c81d1139-1a4d-42b0-a5f5-906d5aa3e768"/>
+				<textElement>
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[Petroleum Transportation ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="10" width="100" height="20" uuid="19fbe863-c26d-473f-92a7-9928e172d419"/>
+				<text><![CDATA[Sub Report]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-23" y="52" width="80" height="20" uuid="de471429-2b12-4184-b26b-81b08424cf75"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="57" y="52" width="40" height="20" uuid="96e17219-2816-49a8-affa-41e0fbf22a48"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="468" splitType="Stretch">
+			<staticText>
+				<reportElement x="22" y="17" width="148" height="32" uuid="7c851998-71aa-41dc-b36a-ef2efcf32bce"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Natonal Identity Card :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="17" width="185" height="32" uuid="7f268e99-b37c-42dd-9aa3-b262fee9b260"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NIC}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="22" y="65" width="140" height="32" uuid="44a47aae-b8ad-4b3b-926e-bce79c31228b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Reservation Date :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="65" width="185" height="32" uuid="9e2486c0-5a82-4736-9a32-3a0f95d204de"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="22" y="111" width="140" height="32" uuid="56cb75ea-dd10-462c-a04b-7a7691dd92be"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Permit No :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="282" y="111" width="185" height="32" uuid="f6529f2a-b056-4a8b-9ea6-2596997da598"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{permit_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="22" y="156" width="140" height="32" uuid="03fd01d2-b2d7-4a81-94e9-3838e9b0433d"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Sender Name :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="282" y="156" width="185" height="32" uuid="99c0b6d2-8dce-448c-94e5-f0cb8e7290eb"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sender_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="22" y="204" width="140" height="32" uuid="4b43d6e6-b2c9-406b-80fd-bb4e22131740"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Sender Address :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="282" y="204" width="185" height="32" uuid="8584b490-c8d6-40d8-af2a-e7ec0993cb7d"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sender_addr}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="22" y="248" width="140" height="32" uuid="3ab53a7d-c816-4f20-a1ae-e7ef2c9b7bb8"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Receiver Name : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="284" y="248" width="185" height="32" uuid="19c47677-49c0-4347-ab51-446df4df735b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{res_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="22" y="292" width="140" height="32" uuid="97b94bb5-5f01-4645-a8ab-c9368e331ecf"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Receiver Address :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="288" y="292" width="185" height="32" uuid="520c39c6-d6e3-46a1-a444-b92fc523f829"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{res_addr}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="22" y="336" width="140" height="32" uuid="5c8bb8fc-2ede-40c6-881f-ce32334c6a23"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[ Quantity(Tonn) : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="290" y="336" width="185" height="32" uuid="b81504ed-9730-463a-bcc4-a969679ec5b7"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ton}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="26" y="380" width="140" height="32" uuid="87450513-632f-478d-a11f-bc8afbdc9a80"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Distance(KM) : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="291" y="380" width="185" height="32" uuid="c85d3dff-cf6d-472d-92d1-4a9a3866bea8"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{km}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="423" width="140" height="32" uuid="020845b5-0472-403b-9587-e0327f187aeb"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Train Fare :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="292" y="423" width="185" height="32" uuid="3f306c37-7340-4275-8835-c35ff6b54745"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fare}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="205" y="27" width="1" height="416" uuid="57dd1802-d7da-4e16-9cdf-2f3d56d192aa"/>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="450" y="21" width="100" height="20" uuid="e8b9ae8e-15bd-41ea-8196-7ca7fbe9c8b9"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

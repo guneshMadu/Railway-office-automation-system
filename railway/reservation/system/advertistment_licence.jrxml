@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a014db7e-1274-465d-8fef-09949eaa15ec">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true" pdfFontName="Times-Roman"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#F0EFEF"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+   *
+FROM
+    advertisement]]>
+	</queryString>
+	<field name="applicant_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="adv_firm" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="adv_brand_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="medium" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="station" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="position" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="period_from" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="period_to" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="size" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sketch" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="charges" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="132" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="451" height="95" backcolor="#000000" uuid="d27c7b14-78e2-457b-ba90-c5be51b8074d"/>
+				<staticText>
+					<reportElement style="Title" x="0" y="0" width="370" height="66" uuid="9beab5e0-12e1-4dba-af0f-9a437ea82e21"/>
+					<textElement>
+						<font size="36" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Advertisement Licence ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="SubTitle" x="121" y="66" width="249" height="29" uuid="330ee819-2568-4b59-a601-cfc3c32be102"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="22" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Issued by Sri Lanka Railway]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="100" width="451" height="32" forecolor="#000000" backcolor="#CC0000" uuid="ff9dce5d-acbf-4c07-a3fb-21c908494084"/>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement x="307" y="12" width="144" height="20" forecolor="#FFFFFF" uuid="b4576e29-646f-43b1-9b26-dcf2e82540e8"/>
+					<textElement textAlignment="Right">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<image>
+				<reportElement x="453" y="11" width="102" height="111" uuid="885e594f-4c15-473e-99a7-0d363ad5b28a"/>
+				<imageExpression><![CDATA["C:\\Users\\Gunesh Madusanka\\Documents\\NetBeansProjects\\Railway Reservation System\\src\\railway\\reservation\\system\\cherry.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="456" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="154" y="18" width="114" height="18" uuid="6c40307d-f6fb-4a63-8e28-4076e2b06d4c"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant_id}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="157" y="97" width="95" height="18" uuid="d2b46f27-a06c-41b9-a8b5-fc469e7ef73b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NIC}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="157" y="184" width="95" height="18" uuid="96325f5b-85fa-4ba0-a5d9-518f04015a05"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="157" y="255" width="95" height="18" uuid="ef24acf1-1167-44c5-ac94-b59c538c0c78"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{adv_firm}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="157" y="332" width="109" height="18" uuid="2211676d-c3dd-49ca-83ef-4fb508afd0c0"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{adv_brand_name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="14" y="414" width="252" height="42" uuid="65926d25-874e-4e50-a5ea-f7f8ec09455a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medium}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="283" y="36" width="263" height="61" uuid="2eff7601-f3a6-4d2b-9860-f9f41bede412"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{position}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="294" y="135" width="252" height="18" uuid="a556940b-176b-4033-a358-4b7afff7b76b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{period_from}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="295" y="202" width="252" height="18" uuid="5d0cb063-916b-4810-96cf-67b570d03762"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{period_to}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="396" y="414" width="151" height="18" uuid="8e2d8dbb-5bf4-4fe9-af16-cebeb6b100be"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{station}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="439" y="255" width="108" height="18" uuid="8db454ee-8d3d-445d-b330-228e4670c06f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{size}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="438" y="332" width="108" height="18" uuid="4b3215c0-1cfa-4c16-9992-1ab96c1191d4"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{charges}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Column header" x="14" y="18" width="107" height="18" forecolor="#000000" uuid="8248196d-037a-4ddf-83df-511e4fa8c9da"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Licence ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="6" y="97" width="119" height="18" forecolor="#000000" uuid="a8ab020e-600c-483c-9298-0173de6222b4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[National Identy Card]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="14" y="184" width="107" height="18" forecolor="#000000" uuid="30f47675-1422-4afa-9ddb-84b7537c5d11"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Applicant Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="14" y="255" width="109" height="18" forecolor="#000000" uuid="1ce095c3-107c-40f9-9c54-bae20ac25ded"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Firm Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="14" y="332" width="94" height="18" forecolor="#000000" uuid="f9c78ae3-7efd-47c3-a24e-8d8c0d0411e4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Brand Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="80" y="371" width="107" height="18" forecolor="#000000" uuid="1271a865-a96a-4d3e-834f-aae83e7ab686"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Medium]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="380" y="18" width="71" height="18" forecolor="#000000" uuid="6859801c-9a9b-4f62-be5e-7e10657148ab"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valid Place]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="348" y="109" width="149" height="18" forecolor="#000000" uuid="18fe0bbb-946f-4318-b65c-1a80b94b93ff"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Advertising Period From]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="348" y="166" width="149" height="18" forecolor="#000000" uuid="ee6ee80e-e832-4735-956b-789975df2431"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Advertising Period To]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="294" y="255" width="102" height="18" forecolor="#000000" uuid="f32ca0b8-5ef9-41b3-90a1-52ecbf06534b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Size]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="294" y="414" width="71" height="18" forecolor="#000000" uuid="de48fcd1-eff0-4454-a037-958ffcc09a5d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Station]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="295" y="332" width="63" height="18" forecolor="#000000" uuid="38777a71-1a96-449a-8b62-50749240c0a0"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Charges]]></text>
+			</staticText>
+			<line>
+				<reportElement x="275" y="4" width="1" height="428" uuid="4d7c1c6e-5616-4523-a589-0dacf75f1dae"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="18" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="0be8c640-2f5b-466a-97e5-ba86e62bf552"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="1" width="555" height="24" forecolor="#D0B48E" backcolor="#000000" uuid="8c15d8fd-9cd2-4617-8aca-2e5d4f46708f"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="513" y="0" width="40" height="20" forecolor="#FFFFFF" uuid="b6269492-fca4-43b6-8d51-7193cd5d6adb"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="433" y="0" width="80" height="20" forecolor="#FFFFFF" uuid="1342614a-0188-4a13-bfde-04a6b4f93e1e"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="2" y="1" width="197" height="20" forecolor="#FFFFFF" uuid="b9be0822-8c07-4335-9dff-a38b9e862e21"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

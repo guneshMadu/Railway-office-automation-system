@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="7deb1536-bef9-4b02-897f-a1e73471e515">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="868"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#FFFFFF" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="table">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#C3CFD9">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#E6F3FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="New Dataset 1" uuid="594a6d2c-76b9-457e-a773-408bece16ee4">
+		<queryString language="SQL">
+			<![CDATA[SELECT
+        *
+FROM
+     trainset_reservation]]>
+		</queryString>
+		<field name="transport_id" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="NIC" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="train_no" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="org_name" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="start_station" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="end_station" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="passenger_count" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="start_date" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="end_date" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="type" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="class" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="compartment_count" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="km" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="facility" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="add_compartment" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="add_compartment_class" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="fare" class="java.lang.Double">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="authorized" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="applicant_name" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="reservation_fee" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="status" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="res_date" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     *
+FROM
+     trainset_reservation]]>
+	</queryString>
+	<field name="transport_id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="train_no" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="org_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="start_station" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="end_station" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="passenger_count" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="start_date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="end_date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="compartment_count" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="km" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fare" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="applicant_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="res_date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="575" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="108" height="215" uuid="d96eb21d-d805-41cc-9519-7b97b47a997d"/>
+				<imageExpression><![CDATA["C:\\Users\\Gunesh Madusanka\\Desktop\\train.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="104" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="0" y="0" width="802" height="67" uuid="a9ee31c1-4b83-4ed2-b4fa-754f7d2fe295"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="54" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[TrainSet Reservation Report ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="232" y="67" width="568" height="37" uuid="9c7e96ad-fca4-4167-a480-1a05f2954924"/>
+				<textElement textAlignment="Right">
+					<font size="26"/>
+				</textElement>
+				<text><![CDATA[Sri Lanka Railway]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="38" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="334" splitType="Stretch">
+			<textField>
+				<reportElement style="Detail" x="321" y="68" width="142" height="15" uuid="23056ef1-1427-48bd-8055-13483c8ffafd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{train_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="321" y="111" width="142" height="15" uuid="95490956-d351-43cb-8d5a-5d25a632dbd5"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{NIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="321" y="150" width="142" height="15" uuid="504f2dde-b180-4318-a209-66640cc70a6b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{org_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="321" y="191" width="142" height="15" uuid="39c33e3a-c5c4-4664-9d50-9205acd51377"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{start_station}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="320" y="234" width="143" height="15" uuid="ae0a568d-994f-409d-8306-7168e5338689"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{end_station}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="320" y="278" width="143" height="15" uuid="421d3594-8cf1-434a-8961-3a18d2d70fb3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{passenger_count}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="632" y="68" width="145" height="15" uuid="bab0e355-992f-4d5c-867e-88134332e5d7"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{start_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="632" y="150" width="145" height="15" uuid="0fa11ac9-a547-44d4-b02b-95448160fc82"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{compartment_count}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="632" y="186" width="145" height="15" uuid="0c01a6fd-0391-4572-87da-120c3a2ef5e8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{km}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="632" y="229" width="145" height="15" uuid="23c3cf87-a97c-483e-9a52-39aa64d7980d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{fare}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="632" y="30" width="145" height="15" uuid="ce520ae4-aa5d-48d6-967a-f00e3c05a2bd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{applicant_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="632" y="278" width="145" height="15" uuid="856169c8-d324-47cd-b8f1-6bacf1321b3e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{res_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="321" y="30" width="142" height="15" uuid="ae69fcda-6d14-482a-b26a-b06073f862fa"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{transport_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="632" y="106" width="145" height="15" uuid="cc56eb87-9185-4832-87a8-79d8b71d24a6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{end_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="157" y="25" width="100" height="20" uuid="271ad568-20b0-4ae9-8965-596c54c0ac4f"/>
+				<text><![CDATA[Transport Identity No :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="63" width="100" height="20" uuid="216afb10-14cb-47cf-87a3-a447ab2cfcdb"/>
+				<text><![CDATA[Train No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="106" width="100" height="20" uuid="53077b6a-4a05-4c38-9a63-4690bbedb30c"/>
+				<text><![CDATA[National Identity Card:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="145" width="100" height="20" uuid="38b09c62-be59-49be-937f-e371b8e7cd6f"/>
+				<text><![CDATA[Organization Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="186" width="100" height="20" uuid="f4808473-949a-4676-b94b-f9fc7fc1b8ea"/>
+				<text><![CDATA[From :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="229" width="100" height="20" uuid="6544544e-de3e-4d85-8172-ed170a45396a"/>
+				<text><![CDATA[To :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="278" width="100" height="20" uuid="9e7873ef-c380-4102-b180-1dac0e11359d"/>
+				<text><![CDATA[Passenger Count :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="68" width="100" height="20" uuid="e34f9b4d-ede9-441e-9c7e-a396ec1440c2"/>
+				<text><![CDATA[Journey Start :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="106" width="100" height="20" uuid="d2c62f49-74d7-467c-9c36-251c08155d76"/>
+				<text><![CDATA[Journey End :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="30" width="100" height="20" uuid="b7e64e1f-88a3-42f0-abdf-97dd7197c6e0"/>
+				<text><![CDATA[Applicant Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="145" width="100" height="20" uuid="afea7988-b9e7-450d-a6bb-4d8bbd087457"/>
+				<text><![CDATA[Compartment Count :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="186" width="100" height="20" uuid="93b08dd3-f900-47c8-bb22-6a226ab1275f"/>
+				<text><![CDATA[Number of Kilo Meter :  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="229" width="100" height="20" uuid="dac59a60-8ecf-4437-a24d-bc74b926f832"/>
+				<text><![CDATA[Train Fare :  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="278" width="100" height="20" uuid="8329f878-b2e1-4c14-a60b-0406384ad992"/>
+				<text><![CDATA[Reserved Date :  ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="157" y="50" width="643" height="1" uuid="c0a8ebdb-02f4-4354-ae0c-a6bb930f1127"/>
+			</line>
+			<line>
+				<reportElement x="157" y="88" width="643" height="1" uuid="af3fa751-1a03-4c9f-afd3-2f30b64b7c14"/>
+			</line>
+			<line>
+				<reportElement x="159" y="131" width="643" height="1" uuid="4605a4d7-f82d-4a09-a7bd-39663231178b"/>
+			</line>
+			<line>
+				<reportElement x="158" y="170" width="643" height="1" uuid="30a12925-3f89-4caf-8e86-67c5c25c6df3"/>
+			</line>
+			<line>
+				<reportElement x="159" y="211" width="643" height="1" uuid="3bdc70a0-a1bc-49ee-9e67-848aabca8d4f"/>
+			</line>
+			<line>
+				<reportElement x="158" y="256" width="643" height="1" uuid="4779a46b-1f3c-4736-97ea-34592858838e"/>
+			</line>
+			<line>
+				<reportElement x="160" y="303" width="643" height="1" uuid="d92bf882-bdcd-48e2-9360-567b3f4688bc"/>
+			</line>
+			<line>
+				<reportElement x="476" y="29" width="1" height="274" uuid="39003031-9a50-4bb8-97b8-40c2900672ba"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="69" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="671" y="0" width="131" height="20" forecolor="#000000" uuid="9c29eb2b-f6bd-45fa-aaae-8ec724c147d6"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="96" y="0" width="267" height="20" uuid="2531e9ca-911e-41a1-a831-36310ac13151"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sri Lanka Railway Reporting]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

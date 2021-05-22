@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="00dcbf17-f3ef-4571-818f-75ad855f06e7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+    *
+FROM
+     trainset_reservation]]>
+	</queryString>
+	<field name="transport_id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="train_no" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="org_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="start_station" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="end_station" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="passenger_count" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="start_date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="end_date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="compartment_count" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="km" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="facility" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="add_compartment" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="add_compartment_class" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fare" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="authorized" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="applicant_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="reservation_fee" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="res_date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="103" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="180" y="0" width="450" height="62" uuid="ded25af5-6dad-4bdf-aae7-dde9ddb3d75f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="28" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Trainset Resevation Detailed Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="315" y="62" width="196" height="22" uuid="532a887c-2155-4cf8-9ab9-4bd19bc4c663"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[SLR]]></text>
+			</staticText>
+			<image>
+				<reportElement x="4" y="3" width="167" height="97" uuid="4c85da5b-7254-4917-8155-aa07887d5be9"/>
+				<imageExpression><![CDATA["C:\\Users\\Gunesh Madusanka\\Desktop\\train.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" uuid="34ef6eee-1664-417b-9fe6-54a52ba45f52"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="391" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="15" uuid="4e217359-327e-4b35-b2f2-5e262b560327"/>
+			</frame>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="147" y="34" width="105" height="15" uuid="256589e4-e5b8-4b7c-8130-4f6350646a7a"/>
+				<textFieldExpression><![CDATA[$F{transport_id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Column header" x="23" y="34" width="85" height="15" forecolor="#736343" uuid="f3514ced-6183-4476-a427-06038e359552"/>
+				<text><![CDATA[Transport Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="23" y="60" width="58" height="15" forecolor="#736343" uuid="4f9bc7f6-7724-4dcf-8522-89c2f6ce5fa2"/>
+				<text><![CDATA[Train No]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="147" y="60" width="105" height="15" uuid="d03da3c0-dc4c-4f9a-bc54-bc88ee1b1dbd"/>
+				<textFieldExpression><![CDATA[$F{train_no}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="147" y="86" width="105" height="15" uuid="137c49f4-154b-47e4-9cf0-e201c5f8f5bc"/>
+				<textFieldExpression><![CDATA[$F{NIC}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Column header" x="23" y="86" width="36" height="15" forecolor="#736343" uuid="8d1f6457-7168-46d8-9954-c300a2dcfdc2"/>
+				<text><![CDATA[NIC]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="147" y="117" width="105" height="15" uuid="142ae330-ad8c-4db9-9a1c-7da6e64a9c72"/>
+				<textFieldExpression><![CDATA[$F{org_name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="147" y="148" width="105" height="15" uuid="c090b2f2-d805-4aa3-a6dc-8694710e212c"/>
+				<textFieldExpression><![CDATA[$F{start_station}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="147" y="174" width="105" height="15" uuid="d268d4cf-e09b-4700-ab21-8a5f8e444b6b"/>
+				<textFieldExpression><![CDATA[$F{end_station}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="147" y="203" width="123" height="15" uuid="f64d71f6-365c-4552-8a61-3bb6044af15b"/>
+				<textFieldExpression><![CDATA[$F{passenger_count}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="147" y="231" width="105" height="15" uuid="ec5a9d13-76e2-4531-ae50-e5587ee5d8a5"/>
+				<textFieldExpression><![CDATA[$F{start_date}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="147" y="262" width="105" height="15" uuid="2019f430-1861-4d69-942b-22f3edaa5475"/>
+				<textFieldExpression><![CDATA[$F{end_date}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="147" y="292" width="201" height="15" uuid="01b463d0-f0fb-42e1-af21-266b4b1caf3a"/>
+				<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="147" y="321" width="105" height="15" uuid="80676c34-58d0-4051-a27b-8e1174c2a249"/>
+				<textFieldExpression><![CDATA[$F{class}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="147" y="348" width="140" height="15" uuid="8af592d9-5cbb-4aed-9971-732fa3500dfd"/>
+				<textFieldExpression><![CDATA[$F{compartment_count}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="612" y="45" width="92" height="15" uuid="b6bfba4d-2606-4eb1-b22b-dd87d1711944"/>
+				<textFieldExpression><![CDATA[$F{km}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="612" y="71" width="92" height="15" uuid="0ffebb39-4df3-47f2-b907-cc0ff63386b8"/>
+				<textFieldExpression><![CDATA[$F{facility}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="612" y="102" width="131" height="15" uuid="117878c6-9cf2-4c65-9f37-b9e42c7ecc04"/>
+				<textFieldExpression><![CDATA[$F{add_compartment}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="612" y="133" width="162" height="15" uuid="1f9ebed0-36ed-4478-b72d-1db064751d4b"/>
+				<textFieldExpression><![CDATA[$F{add_compartment_class}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="612" y="163" width="92" height="15" uuid="6c1d4831-1649-4453-b246-386df32a6c41"/>
+				<textFieldExpression><![CDATA[$F{fare}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="612" y="189" width="92" height="15" uuid="2d3a974c-fd59-405f-91ff-f9a2cdc981c0"/>
+				<textFieldExpression><![CDATA[$F{authorized}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="612" y="218" width="131" height="15" uuid="b68d7f68-1aca-4cc7-806c-415acce2321a"/>
+				<textFieldExpression><![CDATA[$F{applicant_name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="612" y="248" width="116" height="15" uuid="dad87046-2fea-414c-b766-a7fe8daf181c"/>
+				<textFieldExpression><![CDATA[$F{reservation_fee}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="612" y="277" width="92" height="15" uuid="09bba8bd-e991-4e8b-b0fb-34cbb7e00140"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" x="612" y="307" width="162" height="15" uuid="ea298c1c-bdd7-4fee-b658-060bb6b78985"/>
+				<textFieldExpression><![CDATA[$F{res_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Column header" x="23" y="117" width="116" height="15" forecolor="#736343" uuid="de8461c7-8dde-4e60-97ba-9b1793c98dd4"/>
+				<text><![CDATA[Organization name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="23" y="148" width="87" height="15" forecolor="#736343" uuid="5dd455aa-15ba-4353-a4bc-12f51e68f76c"/>
+				<text><![CDATA[Start Station]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="23" y="174" width="84" height="15" forecolor="#736343" uuid="0f78dbcd-ff5e-4ba7-838e-cbbc50d18c25"/>
+				<text><![CDATA[End Station]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="23" y="204" width="113" height="15" forecolor="#736343" uuid="6046b116-97de-48ec-8e28-f4de42d8349a"/>
+				<text><![CDATA[Passenger Count]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="23" y="233" width="83" height="15" forecolor="#736343" uuid="1644f82a-4157-4dab-9421-2e1b987ab1cc"/>
+				<text><![CDATA[Start Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="23" y="262" width="54" height="15" forecolor="#736343" uuid="4fb7ebbb-ac17-4aea-abf2-329579472024"/>
+				<text><![CDATA[End Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="23" y="292" width="39" height="15" forecolor="#736343" uuid="dca632e7-eb7e-4f39-8170-cbc9e55b465f"/>
+				<text><![CDATA[Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="431" y="49" width="72" height="15" forecolor="#736343" uuid="7d884b8e-65de-4d87-8274-8c04d21bbfca"/>
+				<text><![CDATA[Kilometers]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="431" y="75" width="72" height="15" forecolor="#736343" uuid="ca000c51-18ee-4e17-82b1-283b04631575"/>
+				<text><![CDATA[Facilities]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="431" y="132" width="163" height="15" forecolor="#736343" uuid="5d3d0d70-cbab-439c-af2e-58ad6cc765cb"/>
+				<text><![CDATA[Extra Compartment Class]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="431" y="102" width="126" height="15" forecolor="#736343" uuid="3572caf4-ac02-414a-859a-ab32e389438e"/>
+				<text><![CDATA[Extra Compartment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="431" y="163" width="36" height="15" forecolor="#736343" uuid="bb7fbab1-610e-4eaf-8073-a6eeba58a5cc"/>
+				<text><![CDATA[Fare]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="431" y="189" width="80" height="15" forecolor="#736343" uuid="9b5dfa92-e566-446f-8fa9-b93626860bfd"/>
+				<text><![CDATA[Authorized]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="431" y="219" width="106" height="15" forecolor="#736343" uuid="ba663197-bf32-4cb5-92f9-4648bc3cd5de"/>
+				<text><![CDATA[Applicant Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="431" y="248" width="120" height="15" forecolor="#736343" uuid="d2a3dffe-fe92-496a-ac2b-4edd9139731f"/>
+				<text><![CDATA[Reservation Fee]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="431" y="277" width="46" height="15" forecolor="#736343" uuid="d3380d18-da2f-47ac-b186-d5e7165d018d"/>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="431" y="307" width="108" height="15" forecolor="#736343" uuid="a899507a-0f81-4416-a4fb-38b48435b8e0"/>
+				<text><![CDATA[Reservation Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="23" y="321" width="33" height="15" forecolor="#736343" uuid="bb1072ce-33ba-436e-9527-a9d015b86a97"/>
+				<text><![CDATA[Class]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="20" y="348" width="124" height="15" forecolor="#736343" uuid="629fd913-619f-4ec7-86d9-e05961b11705"/>
+				<text><![CDATA[Compartment Count]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="55" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" uuid="27212733-4d15-4786-b2f5-6498dc513deb"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="57" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-21" y="31" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="89c434ad-7dfb-4335-bc76-706fa85920a1"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" uuid="9ab5507c-2de1-4211-afd0-c534fc0f09b1"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="703" y="1" width="80" height="20" forecolor="#736343" uuid="7c5b39c3-bdd0-4e8b-8380-837b5b0563b5"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" uuid="9dc815fe-4725-412e-893f-88d46214c0c1"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

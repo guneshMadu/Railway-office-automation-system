@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ad29549b-30c9-4eda-b762-cc2badcd9912">
+	<property name="ireport.zoom" value="1.0980750000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="432"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true" pdfFontName="Times-Roman"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#F0EFEF"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\Gunesh Madusanka\\Documents\\NetBeansProjects\\Railway Reservation System\\src\\railway\\reservation\\system\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     *
+FROM
+      good_transportation]]>
+	</queryString>
+	<field name="NIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="permit_no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="purpose" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sender_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sender_address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="receiver_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="receiver_address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="start_time" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="end_time" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="from_f" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="to_t" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wagon_type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tonn" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="km" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fare" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="authorized" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="4_wheel" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="8_wheel_1" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="8_wheel_2" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="8_wheel_3" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="102" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="721" height="66" backcolor="#000000" uuid="8d0c9286-01d0-45c1-9be6-c655a9b89954"/>
+				<staticText>
+					<reportElement style="Title" x="0" y="0" width="370" height="66" uuid="ff2cb1c7-fb05-480b-84d9-b00d02a3dedf"/>
+					<box topPadding="4" leftPadding="4" bottomPadding="4" rightPadding="4"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="40" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Good Transportation]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="SubTitle" x="370" y="37" width="316" height="29" uuid="d50296cb-73c5-452f-a30f-924b5707eb50"/>
+					<textElement textAlignment="Right">
+						<font size="22" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Detailed Report With Subtitle ]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="70" width="721" height="32" forecolor="#000000" backcolor="#CC0000" uuid="80a96b96-342c-4593-9564-c56afb93b1f1"/>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement x="553" y="12" width="144" height="20" forecolor="#FFFFFF" uuid="84697445-13c6-4284-91c7-7d72b465f85d"/>
+					<textElement textAlignment="Right">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<image>
+				<reportElement x="724" y="8" width="72" height="86" uuid="486f85e0-1608-4f77-b088-07c7bde9e960"/>
+				<imageExpression><![CDATA["C:\\Users\\Gunesh Madusanka\\Documents\\NetBeansProjects\\Railway Reservation System\\src\\railway\\reservation\\system\\cherry.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<detail>
+		<band height="417" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="145" y="22" width="205" height="18" uuid="a43578b0-cfae-437d-bbd0-90c73ce4f32e"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NIC}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="494" y="23" width="301" height="108" uuid="d0afb20b-ff05-42a5-aeec-7333e3a543e5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="15" y="165" width="380" height="237" uuid="a59a3d2e-bbc1-4304-8e5c-b343f6d30a27"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="408" y="165" width="389" height="237" uuid="e1f19c5a-cbce-4df8-b483-eea85c626726"/>
+			</rectangle>
+			<staticText>
+				<reportElement style="Column header" x="34" y="190" width="83" height="18" forecolor="#000000" uuid="26461d50-8dd9-4c0c-ae36-532c603c843c"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[permit_no]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="34" y="227" width="34" height="18" forecolor="#000000" uuid="959c5e89-136d-4ad5-9bc5-271e36dc63f1"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="34" y="265" width="83" height="18" forecolor="#000000" uuid="aea33b4e-af48-4a15-b38a-5cb90d1975c5"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[purpose]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="34" y="302" width="34" height="18" forecolor="#000000" uuid="7d71e1da-bba5-432b-bac0-ff9c397a888b"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[tonn]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="34" y="338" width="34" height="18" forecolor="#000000" uuid="2852d207-c9bf-466b-a7a9-7a78201caef5"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[fare]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="425" y="263" width="34" height="18" forecolor="#000000" uuid="baf4d9c3-18cc-4e3d-b972-0c54b1e1f431"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="425" y="296" width="95" height="18" forecolor="#000000" uuid="f9d76fb2-749a-4cf1-aedf-1d5d09bb64ea"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[wagon_type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="425" y="189" width="34" height="18" forecolor="#000000" uuid="eabac18b-3126-4e24-b8da-08a6cec3bb4d"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[from_f]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="425" y="225" width="34" height="18" forecolor="#000000" uuid="9e7c81cd-921d-4926-bed8-346b62d8bcf3"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[to_t]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="34" y="370" width="34" height="18" forecolor="#000000" uuid="a7d383ee-3b77-44c1-9178-09c2b2b59ec9"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[km]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="28" y="51" width="83" height="18" forecolor="#000000" uuid="e50eb6c2-4a32-4e70-b523-1cefc478a34d"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[sender_name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="28" y="87" width="83" height="18" forecolor="#000000" uuid="ae191ebd-1ee4-40d8-bead-37accd028e36"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[sender_address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="508" y="37" width="93" height="18" forecolor="#000000" uuid="440ae9fb-93f9-48d8-a4ca-8e356be0c129"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[receiver_name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="508" y="66" width="93" height="18" forecolor="#000000" uuid="cb5b5dc0-cafd-48c1-abad-d4451da433e5"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[receiver_address]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="201" y="191" width="184" height="18" uuid="82b05d37-ba20-49c4-b942-c667fe1fd9bc"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{permit_no}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="201" y="227" width="184" height="18" uuid="386e43db-7769-4cda-95d1-854798bbfa43"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="201" y="265" width="184" height="18" uuid="6db24b92-0b17-4b8d-9690-4cf9055c0daa"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{purpose}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="145" y="51" width="205" height="18" uuid="c22142f9-bf20-4257-9b99-5a995a5663ef"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sender_name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="28" y="118" width="309" height="36" uuid="371f8e91-29be-4508-81b1-d6479ee203eb"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sender_address}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="621" y="37" width="136" height="18" uuid="ffe0594a-c885-49ff-b686-36389c333a8d"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{receiver_name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="508" y="88" width="253" height="36" uuid="60a4f149-0223-4700-96a8-5181b9d30222"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{receiver_address}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="664" y="263" width="121" height="18" uuid="6489dc12-3660-4ba8-9947-329124e249a3"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="643" y="189" width="142" height="18" uuid="8223046c-33f2-4ec0-8795-3de28c384f1c"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{from_f}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="643" y="227" width="142" height="18" uuid="dc1ad282-a76d-4e1b-8c77-38e1deb4803f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{to_t}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="542" y="296" width="247" height="98" uuid="7838ae90-15d8-4109-9a27-8ad331c92060"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{wagon_type}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="205" y="302" width="180" height="18" uuid="6397affd-4f59-44a7-b54b-041d8e7a0389"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tonn}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="201" y="370" width="91" height="18" uuid="0f4c7752-31ed-47ab-bb32-625d6e550324"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{km}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="201" y="338" width="184" height="18" uuid="39bf7c2b-cfb2-49e7-9b79-48e79e7c0e7b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fare}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="28" y="22" width="100" height="20" uuid="e2aa26fe-8fbc-4a83-9204-bc85786eeecd"/>
+				<text><![CDATA[National Identity Card :]]></text>
+			</staticText>
+			<line>
+				<reportElement x="508" y="59" width="253" height="1" uuid="85a5ec23-deeb-465e-b77e-bfa026908652"/>
+			</line>
+			<line>
+				<reportElement x="159" y="194" width="1" height="194" uuid="84390362-d66b-4dd4-8ed0-2814caf8fa97"/>
+			</line>
+			<line>
+				<reportElement x="524" y="191" width="1" height="197" uuid="c9533389-81de-4410-828d-1ba25870cc7a"/>
+			</line>
+			<line>
+				<reportElement x="45" y="217" width="322" height="1" uuid="b76044cd-27ea-4913-95ac-0e77cd3a5e69"/>
+			</line>
+			<line>
+				<reportElement x="45" y="255" width="322" height="1" uuid="789e6dce-50d1-4cb8-8eb9-87c746610ac8"/>
+			</line>
+			<line>
+				<reportElement x="46" y="290" width="322" height="1" uuid="8a1b1905-0a5f-4075-bfa3-c6a162fbc2dd"/>
+			</line>
+			<line>
+				<reportElement x="45" y="327" width="322" height="1" uuid="aa2f4624-22b9-495e-89ea-0edb013f78c7"/>
+			</line>
+			<line>
+				<reportElement x="45" y="363" width="322" height="1" uuid="db4329c5-5864-4f88-9e72-1d22dbc4ea0a"/>
+			</line>
+			<line>
+				<reportElement x="441" y="289" width="316" height="1" uuid="fedb8fb6-6b37-4a7d-b58f-d62710b93aa0"/>
+			</line>
+			<line>
+				<reportElement x="441" y="216" width="316" height="1" uuid="879d9f87-510a-4d67-ad46-d720e89af6e7"/>
+			</line>
+			<line>
+				<reportElement x="441" y="252" width="316" height="1" uuid="e92099b4-baed-4d33-aad1-5c51087c5789"/>
+			</line>
+		</band>
+		<band height="301">
+			<subreport>
+				<reportElement x="45" y="40" width="200" height="100" uuid="bb4a8cca-48ec-4160-971c-b04a4aacf3be"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "good_transportation_mail_sub_report.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="510" y="101" width="200" height="100" uuid="3723ff40-0e6f-4665-aeaf-185add18ecd3"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "good_transportation_petrol_sub_report.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="40" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="6" y="9" width="790" height="25" forecolor="#D0B48E" backcolor="#000000" uuid="317cd6a6-5f1a-4373-a965-dddcdcfe15de"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="742" y="3" width="40" height="20" forecolor="#FFFFFF" uuid="3c7bfe1b-71b7-405c-bb75-49fb5a3aa138"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="659" y="3" width="80" height="20" forecolor="#FFFFFF" uuid="de1ba6c3-1bde-4a35-85bf-26606298b4e2"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="2" y="3" width="197" height="20" forecolor="#FFFFFF" uuid="cf623b83-e118-4b8a-b358-f9498f261491"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

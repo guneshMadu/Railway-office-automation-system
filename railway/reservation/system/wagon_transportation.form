@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup2">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup3">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup4">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="undecorated" type="boolean" value="true"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="kGradientPanel2" min="-2" pref="50" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="kGradientPanel3" pref="794" max="32767" attributes="0"/>
+                          <Component id="jPanel2" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="kGradientPanel1" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="kGradientPanel1" min="-2" pref="40" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="kGradientPanel3" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="jPanel1" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+          <Component id="kGradientPanel2" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="keeptoo.KGradientPanel" name="kGradientPanel1">
+      <Properties>
+        <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="ff" type="rgb"/>
+        </Property>
+        <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="ff" red="33" type="rgb"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseDragged" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="kGradientPanel1MouseDragged"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="kGradientPanel1MouseClicked"/>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="kGradientPanel1MousePressed"/>
+      </Events>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="24" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Goods Transportation "/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="360" y="0" width="420" height="40"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="keeptoo.KGradientPanel" name="kGradientPanel2">
+      <Properties>
+        <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="33" red="ff" type="rgb"/>
+        </Property>
+        <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="ff" red="0" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel15">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icons/shutdown_48px.png"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel15MouseClicked"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="0" width="50" height="40"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="ff" red="99" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+            <BevelBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="44" pref="44" max="-2" attributes="0"/>
+                          <Component id="nic" min="-2" pref="198" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
+                          <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="70" pref="70" max="-2" attributes="0"/>
+                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="pno" min="-2" pref="135" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="208" pref="208" max="-2" attributes="0"/>
+                          <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                          <Component id="type" min="-2" pref="135" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="208" pref="208" max="-2" attributes="0"/>
+                          <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
+                          <Component id="purpose" min="-2" pref="135" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="79" pref="79" max="-2" attributes="0"/>
+                          <Component id="name" min="-2" pref="198" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
+                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="67" pref="67" max="-2" attributes="0"/>
+                          <Component id="add" min="-2" pref="198" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
+                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="46" pref="46" max="-2" attributes="0"/>
+                          <Component id="rname" min="-2" pref="198" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
+                          <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
+                          <Component id="raddress" min="-2" pref="198" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
+                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="91" pref="91" max="-2" attributes="0"/>
+                          <Component id="stime" min="-2" pref="190" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
+                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="97" pref="97" max="-2" attributes="0"/>
+                          <Component id="etime" min="-2" pref="190" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
+                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="85" pref="85" max="-2" attributes="0"/>
+                          <Component id="jCalendar1" min="-2" pref="240" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="48" pref="48" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                                  <Component id="starts" min="-2" pref="198" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="ends" min="-2" pref="200" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="line" min="-2" pref="160" max="-2" attributes="0"/>
+                                  <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                                  <Component id="line1" min="-2" pref="180" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="nic" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                      <Component id="pno" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
+                      <Component id="type" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                      <Component id="purpose" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <Component id="name" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <Component id="add" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      <Component id="rname" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                      <Component id="raddress" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="stime" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="etime" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      <Component id="jCalendar1" min="-2" pref="190" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="line" min="-2" max="-2" attributes="0"/>
+                      <Component id="line1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="starts" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="ends" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="National Identity Card"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sender&apos;s Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sender&apos;s Address"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Start Time"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="End Time"/>
+          </Properties>
+        </Component>
+        <Component class="com.toedter.calendar.JCalendar" name="jCalendar1">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Date"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="nic">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="nicKeyPressed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="name">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="nameKeyPressed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="add">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="addKeyPressed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel11">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Transport permit"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="pno">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="pnoKeyPressed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel12">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Permit No:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel19">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Good Type :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel20">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Purpose :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="type">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="typeKeyPressed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="purpose">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="purposeKeyPressed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sending RailwayStation"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel22">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Receiving RailwayStation"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="ends">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="0"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="starts">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="0"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="startsKeyPressed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel9">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Name of the Receiver"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel10">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Address of the Receiver"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="rname">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="rnameKeyPressed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="raddress">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="raddressKeyPressed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="line">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="10">
+                <StringItem index="0" value="SELECT Start Line First"/>
+                <StringItem index="1" value="Main Line"/>
+                <StringItem index="2" value="Matale Line"/>
+                <StringItem index="3" value="Puttlam Line"/>
+                <StringItem index="4" value="Northern Line"/>
+                <StringItem index="5" value="Batticoloa Line"/>
+                <StringItem index="6" value="Coast Line"/>
+                <StringItem index="7" value="KV Line"/>
+                <StringItem index="8" value="Trincomalee Line"/>
+                <StringItem index="9" value="Talaimannar Line"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="lineItemStateChanged"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lineMouseClicked"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lineActionPerformed"/>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="lineKeyPressed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="line1">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="10">
+                <StringItem index="0" value="SELECT End Line First"/>
+                <StringItem index="1" value="Main Line"/>
+                <StringItem index="2" value="Matale Line"/>
+                <StringItem index="3" value="Puttlam Line"/>
+                <StringItem index="4" value="Northern Line"/>
+                <StringItem index="5" value="Batticoloa Line"/>
+                <StringItem index="6" value="Coast Line"/>
+                <StringItem index="7" value="KV Line"/>
+                <StringItem index="8" value="Trincomalee Line"/>
+                <StringItem index="9" value="Talaimannar Line"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="line1ItemStateChanged"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="line1MouseClicked"/>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="line1KeyPressed"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="line1KeyReleased"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="etime">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JSpinner(sm1)"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="Date date1=new Date();&#xa;SpinnerModel sm1=new SpinnerDateModel(date1,null,null,Calendar.HOUR_OF_DAY);"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JSpinner.DateEditor de1=new JSpinner.DateEditor(etime,&quot;hh:mm:ssa&quot;);&#xa;etime.setEditor(de1);"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="stime">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JSpinner(sm)"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="Date date=new Date();&#xa;SpinnerModel sm=new SpinnerDateModel(date,null,null,Calendar.HOUR_OF_DAY);"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JSpinner.DateEditor de=new JSpinner.DateEditor(stime,&quot;hh:mm:ssa&quot;);&#xa;stime.setEditor(de);"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="cc" red="ff" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+            <BevelBorder/>
+          </Border>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="cc" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="277" pref="277" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="wg4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
+                          <Component id="wagon_count4" min="-2" pref="60" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="wlbl4" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="wg2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
+                          <Component id="wagon_count2" min="-2" pref="60" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="wlbl2" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="wg3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
+                          <Component id="wagon_count3" min="-2" pref="60" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="wlbl3" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="147" pref="147" max="-2" attributes="0"/>
+                          <Component id="jLabel14" min="-2" pref="290" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="147" pref="147" max="-2" attributes="0"/>
+                          <Component id="class1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="71" pref="71" max="-2" attributes="0"/>
+                          <Component id="cls1_below" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+                          <Component id="cls1_above" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="147" pref="147" max="-2" attributes="0"/>
+                          <Component id="class2" min="-2" pref="129" max="-2" attributes="0"/>
+                          <EmptySpace min="71" pref="71" max="-2" attributes="0"/>
+                          <Component id="cls2_below" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+                          <Component id="cls2_above" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="147" pref="147" max="-2" attributes="0"/>
+                          <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="123" pref="123" max="-2" attributes="0"/>
+                          <Component id="ton" min="-2" pref="240" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="147" pref="147" max="-2" attributes="0"/>
+                          <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="133" pref="133" max="-2" attributes="0"/>
+                          <Component id="km" min="-2" pref="240" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="147" pref="147" max="-2" attributes="0"/>
+                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="13" pref="13" max="-2" attributes="0"/>
+                          <Component id="fare" min="-2" pref="377" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="147" pref="147" max="-2" attributes="0"/>
+                          <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="62" pref="62" max="-2" attributes="0"/>
+                          <Component id="authorize" min="-2" pref="169" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="117" pref="117" max="-2" attributes="0"/>
+                          <Component id="jButton5" min="-2" pref="524" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="157" pref="157" max="-2" attributes="0"/>
+                  <Component id="jLabel21" min="-2" pref="100" max="-2" attributes="0"/>
+                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                  <Component id="wg1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="91" pref="91" max="-2" attributes="0"/>
+                  <Component id="wagon_count1" min="-2" pref="60" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="wlbl1" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                      <Component id="wg1" min="-2" max="-2" attributes="0"/>
+                      <Component id="wagon_count1" min="-2" max="-2" attributes="0"/>
+                      <Component id="wlbl1" min="-2" pref="20" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="wg2" min="-2" max="-2" attributes="0"/>
+                      <Component id="wagon_count2" min="-2" max="-2" attributes="0"/>
+                      <Component id="wlbl2" min="-2" pref="20" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="wg3" min="-2" max="-2" attributes="0"/>
+                      <Component id="wagon_count3" min="-2" max="-2" attributes="0"/>
+                      <Component id="wlbl3" min="-2" pref="20" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="wg4" min="-2" max="-2" attributes="0"/>
+                      <Component id="wagon_count4" min="-2" max="-2" attributes="0"/>
+                      <Component id="wlbl4" min="-2" pref="20" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
+                  <Component id="jLabel14" min="-2" pref="36" max="-2" attributes="0"/>
+                  <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="class1" min="-2" max="-2" attributes="0"/>
+                      <Component id="cls1_below" min="-2" max="-2" attributes="0"/>
+                      <Component id="cls1_above" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="class2" min="-2" max="-2" attributes="0"/>
+                      <Component id="cls2_below" min="-2" max="-2" attributes="0"/>
+                      <Component id="cls2_above" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
+                      <Component id="ton" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="km" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jButton1" min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="fare" min="-2" pref="30" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                      <Component id="authorize" min="-2" pref="29" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+                  <Component id="jButton5" min="-2" pref="51" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel13">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Authorized Person"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="authorize">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel14">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Transportation good in wagon (Per Tone)"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel16">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Number of KM"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel21">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Wagon Reservation"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="wg1">
+          <Properties>
+            <Property name="selected" type="boolean" value="true"/>
+            <Property name="text" type="java.lang.String" value="Four Wheeled Wagon"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="wg1MouseClicked"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wg1ActionPerformed"/>
+            <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="wg1PropertyChange"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="wg2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="8 Wheel Wagon [up to 28 tones]"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="wg2ItemStateChanged"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="wg2MouseClicked"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wg2ActionPerformed"/>
+            <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="wg2PropertyChange"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="wg3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="8 Wheel Wagon [up to 39.6 tones]"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="wg3MouseClicked"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wg3ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="wg4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="8 Wheel Wagon [above 39.6 tones]"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="wg4MouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="class1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Class 1(Raw Material)"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="class1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="class2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup2"/>
+            </Property>
+            <Property name="selected" type="boolean" value="true"/>
+            <Property name="text" type="java.lang.String" value="Class 2(Bulk Goods)"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="class2ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="cls1_below">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup3"/>
+            </Property>
+            <Property name="selected" type="boolean" value="true"/>
+            <Property name="text" type="java.lang.String" value="Below Rabukkana"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="cls1_above">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup3"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Above Rabukkana"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="cls2_below">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup4"/>
+            </Property>
+            <Property name="selected" type="boolean" value="true"/>
+            <Property name="text" type="java.lang.String" value="Below Rabukkana"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="cls2_above">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup4"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Above Rabukkana"/>
+          </Properties>
+        </Component>
+        <Component class="com.toedter.components.JSpinField" name="km">
+        </Component>
+        <Component class="javax.swing.JTextField" name="fare">
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Train Fares Calculator"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="com.toedter.components.JSpinField" name="ton">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel23">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Number of Tonn"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="wagon_count4">
+          <Events>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="wagon_count4KeyReleased"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="wagon_count1">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="wagon_count1KeyPressed"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="wagon_count1KeyReleased"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="wagon_count2">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wagon_count2ActionPerformed"/>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="wagon_count2KeyPressed"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="wagon_count2KeyReleased"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="wagon_count3">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="wagon_count3KeyPressed"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="wagon_count3KeyReleased"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="wlbl4">
+        </Component>
+        <Component class="javax.swing.JLabel" name="wlbl1">
+        </Component>
+        <Component class="javax.swing.JLabel" name="wlbl2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value=" "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="wlbl3">
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Petroleum products or Mail Train fare Calculator "/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="keeptoo.KGradientPanel" name="kGradientPanel3">
+      <Properties>
+        <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="cc" red="cc" type="rgb"/>
+        </Property>
+        <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="ff" red="66" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="jButton2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ticket Booking"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="90" y="10" width="130" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Booking Cancelation"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="90" y="40" width="-1" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value=" General Custom Report"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="270" y="70" width="200" height="40"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Booking For Petrolium"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="500" y="10" width="155" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Petrolium Cancelation"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="500" y="40" width="160" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton8">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Booking For Mail"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="290" y="10" width="150" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton9">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Mail Cancelation"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton9ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="290" y="40" width="150" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton10">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Full Report with Petrol Subreport"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="70" width="210" height="40"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton11">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Full Report with Mail Subreport"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton11ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="480" y="70" width="210" height="40"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
